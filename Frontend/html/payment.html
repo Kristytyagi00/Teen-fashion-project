@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Method</title>
+
+    <link rel="stylesheet" href="../css/payment.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+      <span class="material-icons back"> arrow_back </span>
+
+      <div>
+        <h2>PAYMENT METHOD</h2>
+        <p>STEP 2/2</p>
+      </div>
+    </div>
+
+    <!-- OFFER -->
+
+    <div class="offer-box" id="offerBox"></div>
+
+    <!-- PAYMENT OPTIONS -->
+
+    <div class="payment-container">
+      <!-- COD -->
+
+      <label class="payment-card">
+        <div class="payment-top">
+          <div class="price-side">
+            <h2 id="codPrice"></h2>
+          </div>
+
+          <div class="method-side">
+            <h3>Cash on Delivery</h3>
+          </div>
+
+          <div class="radio-wrapper">
+            <input
+              type="radio"
+              name="payment"
+              class="radio-input"
+              value="cod"
+            />
+            <div class="custom-radio"></div>
+          </div>
+        </div>
+      </label>
+
+      <!-- QR PAYMENT -->
+
+      <label class="payment-card">
+        <div class="payment-top">
+          <div class="price-side">
+            <span class="old-price" id="qrOldPrice"></span>
+            <h2 id="qrPrice"></h2>
+            <div class="save-box">Save <span id="qrSave"></span></div>
+          </div>
+
+          <div class="method-side">
+            <h3>Scan & Pay</h3>
+          </div>
+
+          <div class="radio-wrapper">
+            <input type="radio" name="payment" class="radio-input" value="qr" />
+            <div class="custom-radio"></div>
+          </div>
+        </div>
+
+        <div class="qr-box">
+            <img id="upiQR" />
+            <div class="share-wrapper">
+                <p class="share-text">SHARE</p>
+                <button class="share-btn">
+                    <span class="material-icons">share</span>
+                </button>
+            </div>
+        </div>
+        
+        <div id="qr-confirm-section" style="display:none; padding:16px;">
+            <p style="font-size:13px; color:#777; margin-bottom:12px; text-align:center;">
+                📱 Scan the QR code and complete payment in your UPI app
+            </p>
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                <input type="text" id="utrInput"
+                placeholder="Enter UTR / Transaction ID"
+                style="flex:1; padding:12px; border:1px solid #ddd; border-radius:12px; font-size:14px;">
+            </div>
+            <button id="qrPaidBtn" style="
+                width:100%;
+                padding:14px;
+                background:linear-gradient(135deg,#ff4f8b,#ff7aa2);
+                color:white;
+                border:none;
+                border-radius:14px;
+                font-size:15px;
+                font-weight:600;
+                cursor:pointer;
+            ">I Have Paid</button>
+            <p id="utr-error" style="color:red; font-size:12px; margin-top:8px;"></p>
+        </div>
+
+      </label>
+
+      <!-- ONLINE -->
+
+      <label class="payment-card online-card">
+        <div class="payment-top">
+          <div class="price-side">
+            <span class="old-price" id="onlineOldPrice"></span>
+            <h2 id="onlinePrice"></h2>
+            <div class="save-box">Save<span id="onlineSave"></span></div>
+          </div>
+
+          <div class="method-side">
+            <h3>Pay by Card</h3>
+          </div>
+
+          <div class="radio-wrapper">
+            <input
+              type="radio"
+              name="payment"
+              class="radio-input"
+              value="online"
+            />
+            <div class="custom-radio"></div>
+          </div>
+        </div>
+
+        <!-- UPI BOX -->
+
+        <!-- STRIPE CARD BOX -->
+
+        <div class="upi-box" id="stripe-card-section">
+          <p style="font-size: 13px; color: #777; margin-bottom: 10px">
+            🔒 Secure payment powered by Stripe
+          </p>
+
+          <div
+            id="card-element"
+            style="
+              border: 1px solid #ddd;
+              padding: 14px;
+              border-radius: 12px;
+              background: white;
+            "
+          ></div>
+
+          <div
+            id="card-errors"
+            style="color: red; font-size: 13px; margin-top: 8px"
+          ></div>
+
+          <p style="font-size: 11px; color: #aaa; margin-top: 10px">
+            Test card: 4242 4242 4242 4242 | Any future date | Any CVV
+          </p>
+        </div>
+
+
+      </label>
+
+    </div>
+
+    <!-- PRICE DETAILS -->
+
+    <div class="section-box">
+      <div class="section-row price-toggle">
+        <h3>Price Details (1 Item)</h3>
+        <span class="material-icons price-arrow"> expand_more </span>
+      </div>
+
+      <!-- HIDDEN DETAILS -->
+
+      <div class="price-details-dropdown">
+        <div class="price-line-detail">
+          <p>Total Product Price</p>
+          <span id="detailOriginalPrice"></span>
+        </div>
+
+        <div class="price-line-detail">
+          <p>Discount</p>
+          <span class="green-text" id="detailDiscount"></span>
+        </div>
+
+        <div class="price-line-detail">
+          <p>Delivery Fee</p>
+          <span class="green-text"> FREE </span>
+        </div>
+
+        <hr />
+
+        <div class="price-line-detail total">
+          <h4>Order Total</h4>
+          <h4 id="detailFinalPrice"></h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESALE -->
+
+    <div class="section-box">
+      <div class="section-row resale-toggle">
+        <h3>Reselling the order?</h3>
+
+        <span class="material-icons resale-arrow"> expand_more </span>
+      </div>
+
+      <div class="resale-dropdown">
+        <p>Share this product with customers and earn profit on every order.</p>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+
+    <div class="bottom-bar">
+      <div>
+        <span> Total Price </span>
+        <h2 id="finalPrice"></h2>
+      </div>
+
+      <button class="place-order-btn">Place Order</button>
+    </div>
+
+    <script src="../javascript/payment.js"></script>
+  </body>
+</html>

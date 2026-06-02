@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.auth-body{
+    font-family:'Poppins',sans-serif;
+    background:
+    linear-gradient(to right,
+    #fff7fa,#fff1f6);
+}
+
+/* PAGE */
+
+.login-page{
+    width:100%;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    background: rgba(255,255,255,0.72);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.5);
+    border-radius:40px;
+    padding:48px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.08);
+    animation:fadeUp 0.8s ease;
+}
+
+/* LEFT */
+
+.left-panel{
+    position:relative;
+    background:linear-gradient(135deg,#ff5c8d,#ff7da5);
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:80px 60px;
+}
+
+.left-panel::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: radial-gradient(circle at top left
+                                ,rgba(255,255,255,0.15),
+                                transparent 40%),
+                radial-gradient(circle at bottom right,
+                                rgba(255,255,255,0.12),
+                                transparent 35%);
+    pointer-events:none;
+}
+
+
+/* CIRCLES */
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,0.12);
+}
+
+.circle.one{
+    width:520px;
+    height:520px;
+    top:-180px;
+    left:-180px;
+}
+
+.circle.two{
+    width:380px;
+    height:380px;
+    bottom:-120px;
+    right:-120px;
+}
+
+/* CONTENT */
+
+.auth-content{
+    position:relative;
+    z-index:5;
+    width:100%;
+    max-width:540px;
+    color:white;
+}
+
+/* LOGO */
+
+.auth-logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:45px;
+}
+
+.auth-logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.auth-logo h2{
+    font-size:2.1rem;
+    font-weight:700;
+}
+
+.auth-logo span{
+    color:#ffe4ee;
+}
+
+/* HEADING */
+
+.auth-content h1{
+    font-size:4.5rem;
+    line-height:1.05;
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    letter-spacing: -2px;
+    margin-bottom:28px;
+
+}
+
+.auth-content p{
+    font-size:1.05rem;
+    line-height:1.9;
+    color:#fff3f7;
+    margin-bottom:45px;
+    max-width:500px;
+}
+
+/* FEATURES */
+
+.features{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.feature-card{
+    width:155px;
+    min-height:150px;
+
+    padding:24px 20px;
+
+    background:rgba(255,255,255,0.13);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:28px;
+
+    transition:0.4s ease;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.2);
+}
+
+.feature-card .material-icons{
+    font-size:2.2rem;
+    margin-bottom:14px;
+
+    display:block;
+}
+
+.feature-card h3{
+    font-size:1rem;
+    font-weight:600;
+
+    line-height:1.5;
+}
+
+/* RIGHT */
+
+.right-panel{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:40px;
+
+    background:#fffafc;
+}
+
+/* LOGIN BOX */
+
+.login-box{
+    width:100%;
+    max-width:450px;
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:45px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* TOP */
+
+.top-text h2{
+    font-size:2.6rem;
+    color:#222;
+
+    margin-bottom:10px;
+}
+
+.top-text p{
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* TABS */
+
+.tabs{
+    display:flex;
+    gap:15px;
+
+    margin-bottom:35px;
+}
+
+.tab{
+    flex:1;
+
+    height:50px;
+
+    border:none;
+    border-radius:15px;
+
+    background:#f5f5f5;
+
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.35s ease;
+}
+
+.tab.active{
+    background:#ff5c8d;
+    color:white;
+}
+
+/* FORMS */
+
+.form-section{
+    display:none;
+}
+
+.active-form{
+    display:block;
+}
+
+/* INPUT */
+
+.input-box{
+    width:100%;
+    height:60px;
+
+    background:rgba(255,255,255,0.75);
+    border:1px solid #ececec;
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 18px;
+
+    margin-bottom:18px;
+    transition: 0.35s ease;
+}
+
+.input-box:focus-within{
+
+    border-color:#ff5c8d;
+
+    box-shadow:
+    0 10px 25px rgba(255,92,141,0.12);
+
+    transform:translateY(-2px);
+}
+
+
+.input-box .material-icons{
+    color:#999;
+    margin-right:12px;
+}
+
+.input-box input{
+    width:100%;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    font-family:'Poppins',sans-serif;
+}
+
+/* EXTRA */
+
+.form-extra{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:24px;
+
+    font-size:0.9rem;
+}
+
+.forgot-btn{
+    border:none;
+    background:none;
+
+    color:#ff5c8d;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+/* BUTTON */
+
+.main-btn{
+    width:100%;
+    height:60px;
+
+    border:none;
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#ff5c8d,#ff7aa8);
+
+    color:white;
+
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+    box-shadow: 0 15px 30px rgba(255, 92, 141, 0.25);
+}
+
+.main-btn:hover{
+    transform:translateY(-4px) scale(1.01);
+    box-shadow: 0 22px 40px rgba(255, 92, 141, 0.35);
+}
+
+/* SOCIAL */
+
+.social-login{
+    margin-top:35px;
+    text-align:center;
+}
+
+.social-login p{
+    color:#777;
+    margin-bottom:18px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+}
+
+.social-btn{
+    width:52px;
+    height:52px;
+
+    border:none;
+    border-radius:16px;
+
+    background:white;
+
+    font-size:1.2rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+    transition: 0.3 ease;
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.06);
+}
+
+.google-btn{
+    color:#ea4335;
+}
+
+.facebook-btn{
+    color:#1877f2;
+}
+
+.apple-btn{
+    color:#111;
+}
+
+.social-btn:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.08);
+}
+
+
+   /* CUSTOM MESSAGE */
+
+.custom-message{
+
+    position: fixed;
+
+    top: 30px;
+    right: 30px;
+
+    background: #111;
+    color: white;
+
+    padding: 16px 24px;
+
+    border-radius: 14px;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    z-index: 9999;
+
+    opacity: 0;
+    transform: translateY(-20px);
+
+    transition: 0.35s ease;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.2);
+}
+
+.custom-message.show{
+
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .login-page{
+        grid-template-columns:1fr;
+    }
+
+    .left-panel{
+        display:none;
+    }
+
+    .right-panel{
+        padding:20px;
+    }
+}
+
+@media(max-width:600px){
+
+    .login-box{
+        padding:30px 22px;
+        border-radius:25px;
+    }
+
+    .top-text h2{
+        font-size:2rem;
+    }
+}
+
+/* ── RESPONSIVE PATCH ── */
+@media (max-width: 480px) {
+    .login-page {
+        padding: 0;
+        border-radius: 0;
+        min-height: 100dvh;
+    }
+    .right-panel {
+        padding: 24px 16px;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+    .login-box {
+        padding: 28px 18px;
+        border-radius: 22px;
+        box-shadow: none;
+    }
+    .top-text h2 {
+        font-size: 1.7rem;
+    }
+    .top-text p {
+        font-size: 0.85rem;
+    }
+    .tab {
+        height: 44px;
+        font-size: 0.9rem;
+    }
+    .input-box {
+        height: 52px;
+        border-radius: 14px;
+        padding: 0 14px;
+    }
+    .main-btn {
+        height: 52px;
+        font-size: 0.95rem;
+        border-radius: 14px;
+    }
+    .social-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+    }
+    /* Modals */
+    .auth-modal-box {
+        padding: 28px 20px;
+        border-radius: 22px;
+    }
+    .auth-modal-box h2 {
+        font-size: 1.3rem;
+    }
+    .modal-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .tabs {
+        gap: 8px;
+    }
+    .login-box {
+        padding: 22px 14px;
+    }
+    .top-text h2 {
+        font-size: 1.5rem;
+    }
+}

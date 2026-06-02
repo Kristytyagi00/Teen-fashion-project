@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>User Dashboard</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- DASHBOARD -->
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <!-- USER INFO -->
+
+        <div class="user-box">
+
+            <div class="user-avatar" id="userAvatar">
+                R
+            </div>
+
+            <div class="user-details">
+
+                <h3 id="userName">
+                    Rudrakshi
+                </h3>
+
+                <p id="userEmail">
+                    abc@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU -->
+
+        <div class="menu-links">
+
+            <button class="menu-btn active"
+            data-section="orders">
+
+                <span class="material-icons">
+                    shopping_bag
+                </span>
+
+                Orders
+
+            </button>
+
+
+            <button class="menu-btn"
+            data-section="wishlist">
+
+                <span class="material-icons">
+                    favorite
+                </span>
+
+                Wishlist
+
+            </button>
+
+
+            
+
+        </div>
+
+
+        <!-- LOGOUT -->
+
+        <button class="logout-btn" id="logoutBtn">
+
+            Logout
+
+        </button>
+
+    </div>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="content-area">
+
+        <!-- ORDERS -->
+
+        <div class="section active-section"
+        id="orders">
+
+            <h2>My Orders</h2>
+            <div id="ordersContainer">
+
+
+
+        </div>
+
+        </div>
+
+
+
+
+
+        <!-- WISHLIST -->
+
+        <div class="section"
+        id="wishlist">
+
+            <h2>My Wishlist</h2>
+
+            <div id="wishlistContainer"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="../javascript/dashboard.js"></script>
+
+</body>
+</html>

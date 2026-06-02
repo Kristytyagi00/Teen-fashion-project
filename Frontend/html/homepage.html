@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Fashion</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dehaze"/>
+    
+    <link rel="stylesheet" href="../css/Common_nav.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+    
+
+        <!-- Navbar Here -->
+        <nav class="navbar  container ">
+
+        <!-- left section -->
+        <div class="left-section ">
+            <img src="https://img.freepik.com/premium-vector/girls-fashion-pink-color-logo-design_658271-5404.jpg?semt=ais_hybrid&w=740&q=80" alt="Can't load icon">
+            <h2>Teen<span>Fashion</span></h2>
+        </div>
+
+        <!-- center section -->
+            <ul class="navlist">
+            <li><a href="homepage.html"  class="link link-active">Home</a></li>
+            <li><a href="#" class="link"  id="uploadBtn">Upload Image</a></li>
+            <li><a href="products.html" class="link">Products</a></li>
+            <li><a href="about-us.html" class="link">About Us</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+
+
+        <!-- right section -->
+        <div class="right-section ">
+        <span class="material-icons icon search-btn">search</span>
+
+        <a href="cart.html" class="cart">
+
+                <span class="material-icons icon">
+                    shopping_cart
+                </span>
+
+                <span class="cart-count">
+                    0
+                </span>
+
+        </a>
+
+        <div class="profile-menu" id="profileMenu">
+
+              
+
+        </div>
+
+        <span class="material-symbols-outlined  hamburger">
+            dehaze
+        </span>
+        </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Sections Here -->
+
+    <main>
+        <section class="hero">
+                
+            <div class="hero-left">
+                <h4>Find Your Style</h4>
+                <h1>Discover Dresses That Define You</h1>
+                <p>Upload your image and find matching outfits instantly.</p>
+                <button class="btn" id="shopNowBtn">Shop Now</button>
+            </div>
+                
+            <div class="hero-right">
+                <img src="../images/hero.jpg" alt="fashion model">
+            </div>
+        </section>
+
+        <section class="how-works">
+                <div class="how-container">
+
+                    <div class="how-step">
+                        <div class="circle">
+                            <span class="material-icons">cloud_upload</span>
+                        </div>
+
+                        <div>
+                            <h4>1. Upload Image</h4>
+                            <p>Upload your photo to help us understand your style.</p>
+                        </div>
+                    </div>
+
+                <div class="arrow">→</div>
+
+                    <div class="how-step">
+                        <div class="circle">
+                            <span class="material-icons">checkroom</span>
+                        </div>
+
+                        <div>
+                            <h4>2. We Analyze</h4>
+                            <p>Our system analyzes your look, preferences and style.</p>
+                        </div>
+                    </div>
+
+                <div class="arrow">→</div>
+
+                    <div class="how-step">
+                        <div class="circle">
+                            <span class="material-icons">favorite</span>
+                        </div>
+                        <div>
+                            <h4>3. Get Recommendations</h4>
+                            <p>We recommend outfits just for you.</p>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="categories">
+            
+                <h2 class="section-title">Shop By Category</h2>
+            
+                
+
+                <div class="category-container">
+                    <a class="category-card" href="products.html?category=casual">
+                            <img src="../images/casual.jpg" alt="cann't find">
+                            <h3>Casual</h3>
+                    </a>
+                    <a class="category-card" href="products.html?category=dresses">
+                            <img src="../images/party.jpg" alt="cann't find">
+                            <h3>Party</h3>
+                    </a>
+                    <a class="category-card" href="products.html?category=tops">
+                            <img src="../images/college.jpg" alt="cannot find">
+                            <h3>College</h3>
+                    </a>
+                    <a class="category-card" href="products.html?category=traditional">
+                            <img src="../images/Traditional.jpg" alt="">
+                            <h3>Traditional</h3>
+                    </a>
+                </div>
+        </section>
+
+        <section class="trending">
+
+            <h2 class="section-title">Trending Now </h2>
+
+            <div class="trending-container">
+
+                <div class="trend-card" onclick="location.href='products.html?category=casual'">
+                    <img src="../images/Trendy1.jpg" alt="">
+                    <div class="trend-overlay">
+                        <p>Summer Vibes</p>
+                    </div>
+                </div>
+
+                <div class="trend-card" onclick="location.href='products.html?category=tops'">
+                    <img src="../images/Trendy2.jpg" alt="">
+                    <div class="trend-overlay">
+                        <p>College Outfit</p>
+                    </div>
+                </div>
+
+                <div class="trend-card" onclick="location.href='products.html?category=casual'">
+                    <img src="../images/Trendy3.jpg" alt="">
+                    <div class="trend-overlay">
+                        <p>Minimal Style</p>
+                    </div>
+                </div>
+
+                <div class="trend-card" onclick="location.href='products.html?category=dresses'">
+                    <img src="../images/Trendy4.jpg" alt="">
+                    <div class="trend-overlay">
+                        <p>Party Wear</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="products">
+            
+            <h2 class="product-header">Featured Pics For You</h2>
+            
+
+            <div class="product-container">
+
+                    <!-- CARD 1 -->
+                    <div class="product-card" id="1">
+                        <div class="product-image">
+                            <img src="../images/product9.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Floral Summer Dress</h4>
+                            <p class="price">₹999</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="product-card" id="2">
+                    
+                        <div class="product-image">
+                            <img src="../images/product8.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            <span class="tag sale" data-discount="20">SALE</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Casual College Outfit</h4>
+                            <p class="price">
+                                <span class="old-price">₹1299</span>
+                                <span class="new-price">₹999</span>
+                                
+                            </p>
+                            <div class="rating">
+                                ★★★★☆ <span>(4.0)</span>
+                            </div>
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="product-card" id="3">
+                        <div class="product-image">
+                            <img src="../images/product12.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Straight fit kurta Set </h4>
+                            <p class="price">₹1299</p>
+                            <div class="rating">
+                                ★★★★☆ <span>(4.2)</span>
+                            </div>
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="product-card" id="4">
+                        <div class="product-image">
+                            <img src="../images/product3.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Contrast Co-rd Set </h4>
+                            <p class="price">₹1299</p>
+                            <div class="rating">
+                                ★★★★☆ <span>(4.0)</span>
+                            </div>
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="product-card" id="5">
+                        <div class="product-image">
+                            <img src="../images/product14.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            <span class="tag Trendy">Trendy</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Sharara Weeding Outfit</h4>
+                            <p class="price">₹1499</p>
+                            <div class="rating">
+                                ★★★★☆ <span>(4.2)</span>
+                            </div>
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+
+                    <div class="product-card" id="6">
+                        <div class="product-image">
+                            <img src="../images/product5.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+    
+                            <span class="tag Trendy">Trendy</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Yellow Summer Outfit </h4>
+                            <p class="price">₹999</p>
+                            <div class="rating">
+                                ★★★★★ <span>(5.0)</span>
+                            </div>
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                        <!-- CARD 7 -->
+                    <div class="product-card" id="7">
+                        <div class="product-image">
+                            <img src="../images/product7.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Neck Tank Top</h4>
+                            <p class="price">₹399</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    
+                        <!-- CARD 8 -->
+                    <div class="product-card" id="8">
+                        <div class="product-image">
+                            <img src="../images/product15.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            <span class="tag Trendy">Trendy</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4> Floral Summer Dress</h4>
+                            <p class="price">₹1499</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    
+                        <!-- CARD 9 -->
+                    <div class="product-card" id="9">
+                        <div class="product-image">
+                            <img src="../images/product13.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            <span class="tag sale" data-discount="20">SALE</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Indo Western Dress </h4>
+                            <p class="price">
+                                <span class="old-price">₹2599</span>
+                                <span class="new-price">₹2000</span>
+                                
+                            </p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.0)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="product-card" id="10">
+                        <div class="product-image">
+                            <img src="../images/product16.jpg" alt="">
+                            <!-- <span class="wishlist">❤</span> -->
+                            <span class="wishlist" onclick="addToWishlist(this, event)">❤</span>
+                            <span class="tag sale" data-discount="20">SALE</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Prom Dress </h4>
+                            <p class="price">
+                                <span class="old-price">₹1799</span>
+                                <span class="new-price">₹1441</span>
+                                
+                            </p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+        <!-- BRAND -->
+                    <div class="footer-col">
+                        <h3>Teen<span>Fashion</span></h3>
+                        <p>Your style, your way. Find outfits that define you.</p>
+
+                        <div class="social">
+                            <span class="material-icons">facebook</span>
+                            <span class="material-icons">public</span>
+                            <span class="material-icons">camera_alt</span>
+                        </div>
+                    </div>
+
+        <!-- LINKS -->
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <a href="../html/homepage.html">Home</a>
+                
+                        <a href="../html/products.html">Products</a>
+                        <a href="../html/contact.html">Contact</a>
+                    </div>
+
+        <!-- SERVICE -->
+                    <div class="footer-col">
+                        <h4>Customer Service</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Track Order</a>
+                        <a href="#">Returns</a>
+                        <a href="#">FAQs</a>
+                    </div>
+
+        <!-- CONTACT -->
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <p>support@teenfashion.com</p>
+                        <p>+91 98765 43210</p>
+                        <p>New Delhi, India</p>
+                    </div>
+
+        <!-- NEWSLETTER -->
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <p>Get latest updates</p>
+                        <div class="newsletter">
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <button onclick="subscribeEmail()">Subscribe</button>
+                        </div>
+                        <p id="message"></p>
+                    </div>
+
+        </div>
+
+        <div class="footer-bottom">
+        © 2026 Teen Fashion. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- Upload Modal -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="upload-box  new-layout">
+            <!-- CLOSE BUTTON -->
+            <span class="close-upload" id="closeUpload">&times;</span>
+            <div class="upload-left">
+    
+                <h2>Upload Your Image</h2>
+                <p>Drag & drop or choose a file to get AI style recommendation</p>
+
+                <!-- Upload area -->
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" hidden>
+
+
+                    <!-- Placeholder -->
+                    <div class="upload-placeholder" id="placeholder">
+                        <div class="upload-icon">📤</div>
+                        <p>Drag & Drop your image Here</p>
+                        <span>or</span>
+                        <button class="btn" id="chooseFile">Choose File</button>
+                    </div>
+                
+                    <!-- Preview -->
+                    <div class="preview" id="previewBox">
+                        <img id="previewImage" src="" alt="preview">
+                        <button class="remove-btn" id="removeImage">Remove</button>
+                    </div>
+                </div>
+                
+                <button class="btn upload-btn analyze-btn" >Analyze Style</button>
+                <p class="note">JPG, PNG, WEBP (Max 10MB)</p>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="upload-right">
+
+                <h3>Tips for best results</h3>
+                <div class="tips">
+
+                    <p><i class="ri-sun-line"></i> Use natural lighting</p>
+
+                    <p><i class="ri-user-smile-line"></i> Keep face clearly visible</p>
+
+                    <p><i class="ri-filter-off-line"></i> Avoid heavy filters</p>
+
+                    <p><i class="ri-camera-line"></i> Use a clear front camera</p>
+
+                    <p><i class="ri-focus-3-line"></i> Keep face centered</p>
+
+                </div>
+
+                <h3>Good Examples</h3>
+                <div class="example-images good">
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/80?img=1">
+                        <i class="ri-check-line"></i>
+                    </div>
+
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/80?img=2">
+                        <i class="ri-check-line"></i>
+                    </div>
+                </div>
+
+                <h3>Avoid</h3>
+                <div class="example-images bad">
+                    <div class="img-box">
+                            <img src="https://i.pravatar.cc/80?img=4">
+                            <i class="ri-close-line"></i>
+                    </div>
+
+                    <div class="img-box">
+                            <img src="https://i.pravatar.cc/80?img=5">
+                            <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div class="result-modal" id="resultModal">
+        <div class="result-box" style="
+            background:white;
+            border-radius:24px;
+            padding:1.5rem;
+            max-width:520px;
+            width:90%;
+            margin:auto;
+            position:relative;
+            ">
+            <!-- HEADER -->
+            <div style="text-align:center;margin-bottom:1.2rem">
+                <h2 style="
+                    font-size:22px;
+                    font-weight:700;
+                    background:linear-gradient(135deg,#ff4f8b,#ff7aa2);
+                    background-clip:text;
+                    -webkit-background-clip:text;
+                    color:transparent;
+                    -webkit-text-fill-color:transparent;
+                    margin:0 0 4px;
+                    ">
+                    ✨ AI Style Analysis
+                </h2>
+                <p style="font-size:13px;color:#888;margin:0">Your personalized fashion recommendation</p>
+            </div>
+    
+            <!-- CONTENT -->
+            <div style="display:flex;gap:1.2rem;align-items:flex-start">
+    
+                <!-- IMAGE -->
+                <img id="resultImage" style="
+                    width:120px;
+                    height:150px;
+                    object-fit:cover;
+                    object-position:top;
+                    border-radius:16px;
+                    flex-shrink:0;
+                    border:3px solid #ff4f8b;
+                ">
+    
+                <!-- INFO -->
+                <div style="flex:1;min-width:0">
+    
+                    <!-- STAT CARDS -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:12px">
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">SKIN</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="skinTone">—</div>
+                        </div>
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">FACE</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="faceShape">—</div>
+                        </div>
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">BODY</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="bodyType">—</div>
+                        </div>
+                    </div>
+    
+                    <!-- STYLES -->
+                    <div style="font-size:10px;font-weight:700;color:#ff4f8b;margin-bottom:5px;letter-spacing:0.5px">RECOMMENDED STYLES</div>
+                    <div id="styleTags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px"></div>
+    
+                    <!-- COLORS -->
+                    <div style="font-size:10px;font-weight:700;color:#ff4f8b;margin-bottom:5px;letter-spacing:0.5px">YOUR COLORS</div>
+                    <div id="colorDots" style="display:flex;gap:5px;align-items:center;margin-bottom:10px;flex-wrap:wrap"></div>
+    
+                    <!-- TIP -->
+                    <div id="styleTip" style="
+                        background:#fff0f5;
+                        border-left:3px solid #ff4f8b;
+                        border-radius:0 10px 10px 0;
+                        padding:8px 10px;
+                        font-size:12px;
+                        color:#555;
+                        line-height:1.5;
+                        margin-bottom:10px;
+                    "></div>
+    
+                    <!-- SHOP BUTTON -->
+                    <div id="shopBtnContainer"></div>
+    
+                    <ul id="stylelist" style="display:none"></ul>
+    
+                </div>
+            </div>
+    
+            <!-- CLOSE -->
+            <button id="closeResult" style="
+                width:100%;
+                margin-top:1rem;
+                padding:12px;
+                background:#fff0f5;
+                border:2px solid #ff4f8b;
+                border-radius:14px;
+                font-size:14px;
+                font-weight:700;
+                cursor:pointer;
+                color:#ff4f8b;
+            ">Close</button>
+    
+        </div>
+
+
+        
+
+
+
+    </div>
+   
+
+
+        <!-- SEARCH OVERLAY -->
+
+    <div class="search-overlay">
+
+        <div class="search-box">
+
+        <!-- TOP -->
+
+            <div class="search-top">
+
+                <div class="search-input-box">
+
+                    <span class="material-icons">search</span>
+
+                    <input type="text"  id="searchInput"
+                    placeholder="Search trendy dresses...">
+
+                </div>
+
+                <span class="material-icons close-search">
+                close
+                </span>
+
+            </div>
+
+            <div class="ai-line">
+            ✨ AI suggestions based on teenager fashion trends
+            </div>
+
+        <!--search body -->
+        <div class="search-body">
+
+       
+
+            
+            
+
+            <!-- right -->
+
+            <div class="search-right">
+
+                <h3>Popular Categories</h3>
+
+                <div class="category-grid">
+                    
+                <div class="fashion-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop" alt="">
+
+
+                    <div class="fashion-overlay">
+                        👗 Dresses
+                    </div>
+                    
+                    
+                </div>
+
+                    <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=600&auto=format&fit=crop" alt="">
+
+                        <div class="fashion-overlay">
+                        👕 Tops
+                        </div>
+                    </div>
+
+                        
+                    <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1773439878533-77383b20577c?w=300&auto=format&fit=crop" alt="">
+
+
+                        <div class="fashion-overlay">
+                        👚 Traditional
+                        </div>
+                    </div>
+
+                    <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1716004360220-213371f51df1?w=300&auto=format&fit=crop" alt=""> 
+
+
+                        <div class="fashion-overlay">
+                            👟casual
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+<script src="../javascript/script.js" defer></script>
+<script src="../javascript/products.js" defer></script>
+
+</body>
+</html>

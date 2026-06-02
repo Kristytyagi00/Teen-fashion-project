@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TeenFashion</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dehaze"/>
+
+
+    <link rel="stylesheet" href="../css/Common_nav.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <header>
+    
+
+        <!-- Navbar Here -->
+        <nav class="navbar">
+
+        <!-- left section -->
+        <div class="left-section">
+            <img src="https://img.freepik.com/premium-vector/girls-fashion-pink-color-logo-design_658271-5404.jpg?semt=ais_hybrid&w=740&q=80" alt="Can't load icon">
+            <h2>Teen<span>Fashion</span></h2>
+        </div>
+
+        <!-- center section -->
+            <ul class="navlist">
+            <li><a href="homepage.html"  class="link">Home</a></li>
+            <li><a href="#" class="link"  id="uploadBtn">Upload Image</a></li>
+            <li><a href="products.html" class="link">Products</a></li>
+            <li><a href="about-us.html" class="link link-active">About Us</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+
+
+        <!-- right section -->
+        <div class="right-section">
+        <span class="material-icons icon search-btn">search</span>
+
+        <a href="cart.html" class="cart">
+
+                <span class="material-icons icon">
+                    shopping_cart
+                </span>
+
+                <span class="cart-count">
+                    2
+                </span>
+
+        </a>
+
+        <div class="profile-menu" id="profileMenu">
+
+                <a href="auth.html" class="profile-login" id="profileLogin">
+                <span class="material-icons icon">person</span>
+                </a>
+
+        </div>
+
+        <span class="material-symbols-outlined  hamburger">
+            dehaze
+        </span>
+        </div>
+
+        </nav>
+    </header>
+
+    <!-- ABOUT TOP TITLE -->
+
+    <section class="about-heading">
+        <span>✨ About TeenFashion</span>
+
+    <h1>
+            Smart Fashion <br>
+            Powered by AI
+        </h1>
+
+        <p>
+            TeenFashion helps teenagers discover trendy outfits
+            based on skin tone, face shape and personal style
+            using intelligent AI recommendations.
+        </p>
+    </section>
+
+
+    <!-- ABOUT HERO -->
+
+    <section class="about-hero">
+
+        <!-- LEFT -->
+        <div class="about-content">
+
+            <div class="about-stats">
+
+                <div class="stat-card">
+                    <i class="ri-ai-generate"></i>
+                    <h3>AI Styling</h3>
+
+                    <p>
+                        Smart outfit recommendations using
+                        intelligent image analysis.
+                    </p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="ri-flashlight-line"></i>
+
+                    <h3>Instant Results</h3>
+
+                    <p>
+                        Upload your image and get fashion
+                        suggestions instantly.
+                    </p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="ri-shopping-bag-line"></i>
+
+                    <h3>Easy Shopping</h3>
+
+                    <p>
+                    Explore stylish teenager outfits
+                    directly from platform.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div class="about-image">
+
+            <div class="image-bg"></div>
+
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop" alt="Fashion Girl">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- EXTRA SECTION -->
+
+    <section class="mission-section">
+
+        <div class="mission-card">
+            <h2>Our Mission</h2>
+
+            <p>
+            We aim to combine fashion and artificial intelligence
+            to help teenagers feel confident and stylish with
+            personalized outfit recommendations.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <h2>Why TeenFashion?</h2>
+
+            <p>
+            TeenFashion creates a smart shopping experience
+            where users can upload their image and discover
+            outfits that truly match their personality.
+            </p>
+        </div>
+
+    </section>
+    <!-- Upload Modal -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="upload-box  new-layout">
+            <!-- CLOSE BUTTON -->
+            <span class="close-upload" id="closeUpload">&times;</span>
+            <div class="upload-left">
+    
+                <h2>Upload Your Image</h2>
+                <p>Drag & drop or choose a file to get AI style recommendation</p>
+
+                <!-- Upload area -->
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" hidden>
+
+
+                    <!-- Placeholder -->
+                    <div class="upload-placeholder" id="placeholder">
+                        <div class="upload-icon">📤</div>
+                        <p>Drag & Drop your image Here</p>
+                        <span>or</span>
+                        <button class="btn" id="chooseFile">Choose File</button>
+                    </div>
+                
+                    <!-- Preview -->
+                    <div class="preview" id="previewBox">
+                        <img id="previewImage" src="" alt="preview">
+                        <button class="remove-btn" id="removeImage">Remove</button>
+                    </div>
+                </div>
+                
+                <button class="btn upload-btn analyze-btn" >Analyze Style</button>
+                <p class="note">JPG, PNG, WEBP (Max 10MB)</p>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="upload-right">
+
+                <h3>Tips for best results</h3>
+                <div class="tips">
+
+                    <p><i class="ri-sun-line"></i> Use natural lighting</p>
+
+                    <p><i class="ri-user-smile-line"></i> Keep face clearly visible</p>
+
+                    <p><i class="ri-filter-off-line"></i> Avoid heavy filters</p>
+
+                    <p><i class="ri-camera-line"></i> Use a clear front camera</p>
+
+                    <p><i class="ri-focus-3-line"></i> Keep face centered</p>
+
+                </div>
+
+                <h3>Good Examples</h3>
+                <div class="example-images good">
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/80?img=1">
+                        <i class="ri-check-line"></i>
+                    </div>
+
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/80?img=2">
+                        <i class="ri-check-line"></i>
+                    </div>
+                </div>
+
+                <h3>Avoid</h3>
+                <div class="example-images bad">
+                    <div class="img-box">
+                            <img src="https://i.pravatar.cc/80?img=4">
+                            <i class="ri-close-line"></i>
+                    </div>
+
+                    <div class="img-box">
+                            <img src="https://i.pravatar.cc/80?img=5">
+                            <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div class="result-modal" id="resultModal">
+        <div class="result-box" style="
+            background:white;
+            border-radius:24px;
+            padding:1.5rem;
+            max-width:520px;
+            width:90%;
+            margin:auto;
+            position:relative;
+            ">
+            <!-- HEADER -->
+            <div style="text-align:center;margin-bottom:1.2rem">
+                <h2 style="
+                    font-size:22px;
+                    font-weight:700;
+                    background:linear-gradient(135deg,#ff4f8b,#ff7aa2);
+                    background-clip:text;
+                    -webkit-background-clip:text;
+                    color:transparent;
+                    -webkit-text-fill-color:transparent;
+                    margin:0 0 4px;
+                    ">
+                    ✨ AI Style Analysis
+                </h2>
+                <p style="font-size:13px;color:#888;margin:0">Your personalized fashion recommendation</p>
+            </div>
+    
+            <!-- CONTENT -->
+            <div style="display:flex;gap:1.2rem;align-items:flex-start">
+    
+                <!-- IMAGE -->
+                <img id="resultImage" style="
+                    width:120px;
+                    height:150px;
+                    object-fit:cover;
+                    object-position:top;
+                    border-radius:16px;
+                    flex-shrink:0;
+                    border:3px solid #ff4f8b;
+                ">
+    
+                <!-- INFO -->
+                <div style="flex:1;min-width:0">
+    
+                    <!-- STAT CARDS -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:12px">
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">SKIN</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="skinTone">—</div>
+                        </div>
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">FACE</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="faceShape">—</div>
+                        </div>
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">BODY</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="bodyType">—</div>
+                        </div>
+                    </div>
+    
+                    <!-- STYLES -->
+                    <div style="font-size:10px;font-weight:700;color:#ff4f8b;margin-bottom:5px;letter-spacing:0.5px">RECOMMENDED STYLES</div>
+                    <div id="styleTags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px"></div>
+    
+                    <!-- COLORS -->
+                    <div style="font-size:10px;font-weight:700;color:#ff4f8b;margin-bottom:5px;letter-spacing:0.5px">YOUR COLORS</div>
+                    <div id="colorDots" style="display:flex;gap:5px;align-items:center;margin-bottom:10px;flex-wrap:wrap"></div>
+    
+                    <!-- TIP -->
+                    <div id="styleTip" style="
+                        background:#fff0f5;
+                        border-left:3px solid #ff4f8b;
+                        border-radius:0 10px 10px 0;
+                        padding:8px 10px;
+                        font-size:12px;
+                        color:#555;
+                        line-height:1.5;
+                        margin-bottom:10px;
+                    "></div>
+    
+                    <!-- SHOP BUTTON -->
+                    <div id="shopBtnContainer"></div>
+    
+                    <ul id="stylelist" style="display:none"></ul>
+    
+                </div>
+            </div>
+    
+            <!-- CLOSE -->
+            <button id="closeResult" style="
+                width:100%;
+                margin-top:1rem;
+                padding:12px;
+                background:#fff0f5;
+                border:2px solid #ff4f8b;
+                border-radius:14px;
+                font-size:14px;
+                font-weight:700;
+                cursor:pointer;
+                color:#ff4f8b;
+            ">Close</button>
+    
+        </div>
+    </div>
+   
+
+
+
+    <!-- SEARCH OVERLAY -->
+
+    <div class="search-overlay">
+
+        <div class="search-box">
+
+        <!-- TOP -->
+
+            <div class="search-top">
+
+                <div class="search-input-box">
+
+                    <span class="material-icons">search</span>
+
+                    <input type="text" id="searchInput"
+                    placeholder="Search trendy dresses..." id="searchInput">
+
+                </div>
+
+                <span class="material-icons close-search">
+                close
+                </span>
+
+            </div>
+
+            <div class="ai-line">
+            ✨ AI suggestions based on teenager fashion trends
+            </div>
+
+        <!--search body -->
+        <div class="search-body">
+
+        
+
+            
+
+            <!-- right -->
+
+            <div class="search-right">
+
+                <h3>Popular Categories</h3>
+
+                <div class="category-grid">
+                    
+                <div class="fashion-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop" alt="">
+
+
+                    <div class="fashion-overlay">
+                        👗 Dresses
+                    </div>
+                    
+                    
+                </div>
+
+                    <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=600&auto=format&fit=crop" alt="">
+
+                        <div class="fashion-overlay">
+                        👕 Tops
+                        </div>
+                    </div>
+
+                        
+                   <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1773439878533-77383b20577c?w=300&auto=format&fit=crop" alt="">
+
+
+                        <div class="fashion-overlay">
+                        👚 Traditional
+                        </div>
+                    </div>
+
+                    <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1716004360220-213371f51df1?w=300&auto=format&fit=crop" alt=""> 
+
+
+                        <div class="fashion-overlay">
+                            👟casual
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

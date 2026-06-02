@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Fashion</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dehaze" />
+
+    <link rel="stylesheet" href="../css/Common_nav.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/products.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+    
+
+        <!-- Navbar Here -->
+        <nav class="navbar  container ">
+
+        <!-- left section -->
+        <div class="left-section ">
+            <img src="https://img.freepik.com/premium-vector/girls-fashion-pink-color-logo-design_658271-5404.jpg?semt=ais_hybrid&w=740&q=80" alt="Can't load icon">
+            <h2>Teen<span>Fashion</span></h2>
+        </div>
+
+        <!-- center section -->
+            <ul class="navlist">
+            <li><a href="homepage.html"  class="link">Home</a></li>
+            <li><a href="#" class="link"  id="uploadBtn">Upload Image</a></li>
+            <li><a href="products.html" class="link link-active">Products</a></li>
+            <li><a href="about-us.html" class="link">About Us</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+
+
+        <!-- right section -->
+        <div class="right-section ">
+        <span class="material-icons icon search-btn">search</span>
+
+        <a href="cart.html" class="cart">
+
+                <span class="material-icons icon">
+                    shopping_cart
+                </span>
+
+                <span class="cart-count">
+                    2
+                </span>
+
+        </a>
+
+        <div class="profile-menu" id="profileMenu">
+
+                <a href="auth.html" class="profile-login" id="profileLogin">
+                    <span class="material-icons icon">person</span>
+                </a>
+
+        </div>
+
+        <span class="material-symbols-outlined  hamburger">
+            dehaze
+        </span>
+        </div>
+
+        </nav>
+    </header>
+
+    <!--  PRODUCTS PAGE  -->
+
+<section class="products-page">
+    
+
+    <!-- FILTER SECTION -->
+
+    <aside class="filter-sidebar">
+
+        <h2>Filters By</h2>
+        <hr>
+        <br>
+
+
+        <!-- CATEGORY -->
+
+<div class="filter-box">
+
+    <h3>
+        Category
+        <span class="material-icons arrow">expand_more</span>
+    </h3>
+
+    <div class="filter-content">
+
+        <!-- PARTY WEAR -->
+
+        <div class="sub-category">
+
+            <div class="main-option">
+                <input type="checkbox" value="dresses">
+                <span>Party Wear</span>
+            </div>
+
+            
+        </div>
+
+
+        <!-- CASUAL -->
+
+        <div class="sub-category">
+
+            <div class="main-option">
+                <input type="checkbox" value="casual">
+                <span>Casual</span>
+            </div>
+
+
+        </div>
+
+
+        <!-- COLLEGE WEAR -->
+
+        <div class="sub-category">
+
+            <div class="main-option">
+                <input type="checkbox" value="tops">
+                <span>College Wear</span>
+            </div>
+
+            
+
+        </div>
+
+
+        <!-- TRADITIONAL -->
+
+        <div class="sub-category">
+
+            <div class="main-option">
+                <input type="checkbox" value="traditional">
+                <span>Traditional</span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+        <hr>
+        <br>
+
+
+        <!-- SIZE -->
+
+        <div class="filter-box">
+
+            <h3>Size
+                <span class="material-icons arrow">expand_more</span>
+            </h3>
+
+            <div class="filter-content">
+            <label>
+                <input type="radio" name="size">
+                XS
+            </label>
+
+            <label>
+                <input type="radio" name="size">
+                S
+            </label>
+
+            <label>
+                <input type="radio" name="size">
+                M
+            </label>
+
+            <label>
+                <input type="radio" name="size">
+                L
+            </label>
+
+            <label>
+                <input type="radio" name="size">
+                XXL
+            </label>
+
+            </div>
+        </div>
+        <hr>
+        <br>
+
+
+        <!-- PRICE -->
+
+        <div class="filter-box">
+
+            <h3>Price
+                <span class="material-icons arrow">expand_more</span>
+            </h3>
+
+            <div class="filter-content">
+            <label>
+                <input type="radio" name="price">
+                Under ₹999
+            </label>
+
+            <label>
+                <input type="radio" name="price">
+                ₹1000 - ₹1499
+            </label>
+
+            <label>
+                <input type="radio" name="price">
+                ₹1500 - ₹1999
+            </label>
+
+            <label>
+                <input type="radio" name="price">
+                Above ₹2000
+            </label>
+
+            </div>
+        </div>
+
+
+        <!-- BUTTON -->
+
+        <div class="filter-buttons">
+
+        <button class="filter-btn">
+            Apply Filter
+        </button>
+
+        <button class="reset-btn">
+            Reset Filters
+        </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!--  PRODUCT LISTING SECTION  -->
+
+    <div class="products-container">
+
+
+        <!-- TOPBAR -->
+
+        <div class="products-topbar">
+
+            <div>
+
+                <p>Home > Products</p>
+
+                <h1>All Products</h1>
+
+            </div>
+
+
+            <!-- SORT -->
+
+            <div class="sort-box">
+                <label>Sort by:</label>
+
+                <select>
+
+                    <option>Newest</option>
+
+                    <option>Low Price</option>
+
+                    <option>High Price</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--  PRODUCTS GRID  -->
+
+        <div class="products-grid">
+
+            
+
+        <!-- CARD 1 -->
+                    <div class="product-card"
+                        data-id="1"
+
+                    data-name="Floral Summer Dress"
+                        data-price="₹999"
+                        data-rating="4.5"
+                        data-image="../images/product1.jpg"
+                        data-category="dresses"
+                        data-description="Beautiful floral summer dress perfect for parties, outings and casual wear."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                        
+                            <img src="../images/product1.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Floral Summer Dress</h4>
+                            <p class="price">₹999</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="product-card"
+                        data-id="2"
+
+                        data-name="Sharara Weeding Outfit"
+                        data-price="₹1499"
+                        data-rating="4.2"
+                        data-image="../images/product14.jpg"
+                        data-category="traditional"
+                        data-description="Elegant sharara set perfect for weddings and special occasions."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/product14.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                            <span class="tag Trendy">Trendy</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Sharara Weeding Outfit</h4>
+                            <p class="price">₹1499</p>
+                            <div class="rating">
+                                ★★★★☆ <span>(4.2)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="product-card"
+                        data-id="3"
+
+                        data-name="Puff Sleeve Top"
+                        data-price="₹599"
+                        data-rating="3"
+                        data-category="tops"
+                        data-image="../images/Product_images/3.jpg"
+                        data-description="Cute puff sleeve top perfect for a casual day out."
+                    >
+                    <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/Product_images/3.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Puff Sleeve Top</h4>
+                            <p class="price">₹599</p>
+                            
+                            <div class="rating">
+                                ★★★☆☆ <span>(3)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="product-card"
+                        data-id="4"
+        
+
+                        data-name="Pleated Skirt co-ord Set"
+                        data-price="₹1999"
+                        data-rating="5"
+                        data-image="../images/Trendy3.jpg"
+                        data-category="dresses"
+                        data-description="Stylish pleated skirt co-ord set for a chic and trendy look."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/Trendy3.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Pleated Skirt co-ord Set</h4>
+                            <p class="price">₹1999</p>
+                            
+                            <div class="rating">
+                                ★★★★★ <span>(5)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="product-card"
+                        data-id="5"
+                    
+                        data-name="Straight fit kurta Set"
+                        data-price="₹1299"
+                        data-rating="4.2"
+                        data-category="traditional"
+                        data-image="../images/product12.jpg"
+                        data-description="Classic straight fit kurta set perfect for formal occasions."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/product12.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Straight fit kurta Set</h4>
+                            <p class="price">₹1299</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.2)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="product-card"
+                        data-id="6"
+
+                        data-name="Burned orange dress"
+                        data-price="₹1299"
+                        data-rating="4"
+                        data-image="../images/Product_images/Burned orange dress.jpg"
+                        data-category="dresses"
+                        data-description="Stylish burned orange dress perfect for a casual day out."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/Product_images/Burned orange dress.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                            <span class="tag Trendy">Trendy</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Burned orange dress</h4>
+                            <p class="price">₹1299</p>
+
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 7 -->
+                    <div class="product-card"
+                        data-id="7"
+
+                        data-name="Denim Tube Top"
+                        data-price="₹1399"
+                        data-rating="4.5"
+                        data-image="../images/Product_images/11.jpg"
+                        data-category="tops"
+                        data-description="Chic denim tube top perfect for a casual day out."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/Product_images/11.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Denim Tube Top</h4>
+                            <p class="price">₹1399</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 8 -->
+                    <div class="product-card"
+                        data-id="8"
+
+                        data-name="Contrast Co-rd Set"
+                        data-price="₹1299"
+                        data-rating="4"
+                        data-image="../images/product3.jpg"
+                        data-category="dresses"
+                        data-description="Stylish contrast co-ord set for a modern and trendy look."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/product3.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Contrast Co-rd Set</h4>
+                            <p class="price">₹1299</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 9 -->
+                    <div class="product-card"
+                        data-id="9"
+
+                        data-name="Indo Western Dress"
+                        data-price="₹2599"
+                        data-rating="4.0"
+                        data-image="../images/product13.jpg"
+                        data-category="traditional"
+                        data-description="Elegant Indo Western dress perfect for a special occasion."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/product13.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                            <span class="tag sale" data-discount="20">SALE</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Indo Western Dress </h4>
+                            <p class="price">
+                                <span class="old-price">₹2599</span>
+                                <span class="new-price">₹2000</span>
+                                
+                            </p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.0)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 10 -->
+                    <div class="product-card"
+                        data-id="10"
+
+                        data-name="Square Neck Fit Dress"
+                        data-price="₹1399"
+                        data-rating="4.5"
+                        data-image="../images/Trendy4.jpg"
+                        data-category="dresses"
+                        data-description="Stylish square neck fit dress perfect for a casual day out."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/Trendy4.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                            <span class="tag sale" data-discount="20">SALE</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Square Neck Fit Dress</h4>
+                            <p class="price">
+                                <span class="old-price">₹1399</span>
+                                <span class="new-price">₹1119</span>
+                                
+                            </p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 11 -->
+                    <div class="product-card"
+                        data-id="11"
+
+                        data-name="Casual College Outfit"
+                        data-price="₹1299"
+                        data-rating="4.0"
+                        data-image="../images/product8.jpg"
+                        data-category="casual"
+                        data-description="Comfortable casual college outfit perfect for everyday wear."
+                    >
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)"
+                        >
+                            <img src="../images/product8.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                            <span class="tag sale" data-discount="20">SALE</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Casual College Outfit</h4>
+                        <p class="price">
+                                <span class="old-price">₹1299</span>
+                                <span class="new-price">₹999</span>
+                                
+                            </p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4)</span>
+                            </div>
+
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 12 -->
+                    <div class="product-card"
+                        data-id="12"
+
+                        data-name="Indo-western dress"
+                        data-price="₹2000"
+                        data-rating="4.5"
+                        data-image="../images/Product_images/saree1.jpg"
+                        data-category="traditional"
+                        data-description="Elegant Indo-western dress perfect for a special occasion.">
+                        <div class="product-image"
+                        onclick="openProduct(this.parentElement)">
+                            <img src="../images/Product_images/saree1.jpg" alt="">
+                            <span class="wishlist" onclick="addToWishlist(this , event)">❤</span>
+                            <span class="tag Trendy">Trendy</span>
+                            
+                        </div>
+
+                        <div class="product-info">
+                            <h4>Indo-western dress</h4>
+                            <p class="price">₹2000</p>
+                            
+                            <div class="rating">
+                                ★★★★☆ <span>(4.5)</span>
+                            </div>
+                            
+                            <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                
+
+                    <!-- PAGE 2 PRODUCTS -->
+
+<!-- CARD 13 -->
+<div class="product-card" data-id="13" data-name="Floral Summer Dress Vol 2" data-price="₹1499" data-rating="4" data-image="../images/product15.jpg" data-category="dresses" data-description="Elegant floral summer dress with trendy and modern fashion look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/product15.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Floral Summer Dress Vol 2</h4>
+        <p class="price">₹1499</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 14 -->
+<div class="product-card" data-id="14" data-name="Neck Tank Top" data-price="₹399" data-rating="4.5" data-image="../images/product7.jpg" data-category="tops" data-description="Comfortable and stylish neck tank top for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/product7.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Neck Tank Top</h4>
+        <p class="price">₹399</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 15 -->
+<div class="product-card" data-id="15" data-name="Prom Dress" data-price="₹1799" data-rating="4.5" data-image="../images/product16.jpg" data-category="dresses" data-description="Elegant prom dress for a special occasion.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/product16.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Prom Dress</h4>
+        <p class="price"><span class="old-price">₹1799</span><span class="new-price">₹1441</span></p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 16 -->
+<div class="product-card" data-id="16" data-name="Casual T-Shirt" data-price="₹999" data-rating="4" data-image="../images/college.jpg" data-category="tops" data-description="Comfortable and stylish casual t-shirt for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/college.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Casual T-Shirt</h4>
+        <p class="price"><span class="old-price">₹999</span><span class="new-price">₹799</span></p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 17 -->
+<div class="product-card" data-id="17" data-name="Yellow Summer Outfit" data-price="₹999" data-rating="5" data-image="../images/product5.jpg" data-category="dresses" data-description="Stylish yellow summer outfit for a vibrant look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/product5.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Yellow Summer Outfit</h4>
+        <p class="price">₹999</p>
+        <div class="rating">★★★★★ <span>(5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 18 -->
+<div class="product-card" data-id="18" data-name="Pearl Embellished Top" data-price="₹1100" data-rating="4" data-image="../images/Product_images/6.jpg" data-category="tops" data-description="Elegant pearl embellished top for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/6.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Pearl Embellished Top</h4>
+        <p class="price">₹1100</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 19 -->
+<div class="product-card" data-id="19" data-name="Floral Dress" data-price="₹999" data-rating="4.5" data-image="../images/product9.jpg" data-category="dresses" data-description="Beautiful floral dress for a charming look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/product9.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Floral Dress</h4>
+        <p class="price">₹999</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 20 -->
+<div class="product-card" data-id="20" data-name="Pink Peplum Sharara Set" data-price="₹2900" data-rating="5" data-image="../images/Product_images/Pink Peplum Sharara Set.jpg" data-category="traditional" data-description="Elegant pink peplum sharara set for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Pink Peplum Sharara Set.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Pink Peplum Sharara Set</h4>
+        <p class="price">₹2900</p>
+        <div class="rating">★★★★★ <span>(5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 21 -->
+<div class="product-card" data-id="21" data-name="Indo Western Kurta Set" data-price="₹2000" data-rating="4" data-image="../images/Product_images/kurta set.jpg" data-category="traditional" data-description="Elegant Indo Western dress for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/kurta set.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Indo Western Kurta Set</h4>
+        <p class="price"><span class="old-price">₹2000</span><span class="new-price">₹1600</span></p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 22 -->
+<div class="product-card" data-id="22" data-name="Yellow Striped Shirt" data-price="₹1210" data-rating="4.5" data-image="../images/Product_images/Pink Striped Shirt for Women.jpg" data-category="tops" data-description="Stylish yellow striped shirt for a vibrant look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Pink Striped Shirt for Women.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Yellow Striped Shirt</h4>
+        <p class="price"><span class="old-price">₹1210</span><span class="new-price">₹968</span></p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 23 -->
+<div class="product-card" data-id="23" data-name="Wide-Leg Denim Jeans" data-price="₹1150" data-rating="4" data-image="../images/Product_images/Wide-Leg Denim Jeans.jpg" data-category="casual" data-description="Comfortable wide-leg denim jeans with trendy streetwear style.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Wide-Leg Denim Jeans.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Wide-Leg Denim Jeans</h4>
+        <p class="price">₹1150</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 24 -->
+<div class="product-card" data-id="24" data-name="Traditional Sharara Outfit" data-price="₹3000" data-rating="4.5" data-image="../images/Product_images/Traditional Sharara Outfit.jpg" data-category="traditional" data-description="Elegant traditional sharara outfit for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Traditional Sharara Outfit.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Traditional Sharara Outfit</h4>
+        <p class="price">₹3000</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 25 -->
+<div class="product-card" data-id="25" data-name="Elegant Lime Green Sharara Set" data-price="₹1569" data-rating="4" data-image="../images/Product_images/Elegant Lime Green Sharara Set.jpg" data-category="traditional" data-description="Elegant lime green sharara set for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Elegant Lime Green Sharara Set.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Elegant Lime Green Sharara Set</h4>
+        <p class="price">₹1569</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 26 -->
+<div class="product-card" data-id="26" data-name="Fashion Era Saree" data-price="₹1490" data-rating="4.5" data-image="../images/Product_images/Fashion Era Saree.jpg" data-category="traditional" data-description="Stylish fashion era saree for a vibrant look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Fashion Era Saree.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Fashion Era Saree</h4>
+        <p class="price">₹1490</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 27 -->
+<div class="product-card" data-id="27" data-name="Camiseta casual T-Shirt" data-price="₹499" data-rating="4" data-image="../images/Product_images/Camiseta casual T-Shirt.jpg" data-category="tops" data-description="Comfortable casual t-shirt for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Camiseta casual T-Shirt.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Camiseta casual T-Shirt</h4>
+        <p class="price">₹499</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 28 -->
+<div class="product-card" data-id="28" data-name="Pocket Utility Jacket" data-price="₹2999" data-rating="4.5" data-image="../images/Product_images/pocket utility jacket.jpg" data-category="casual" data-description="Practical pocket utility jacket for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/pocket utility jacket.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Pocket Utility Jacket</h4>
+        <p class="price">₹2999</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 29 -->
+<div class="product-card" data-id="29" data-name="Hooded Sweatshirt" data-price="₹1299" data-rating="4" data-image="../images/Product_images/Hooded Sweatshirt.jpg" data-category="casual" data-description="Comfortable hooded sweatshirt for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Hooded Sweatshirt.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Hooded Sweatshirt</h4>
+        <p class="price">₹1299</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 30 -->
+<div class="product-card" data-id="30" data-name="Beautiful Pakistani Co-ord Set" data-price="₹1499" data-rating="4.5" data-image="../images/Product_images/Beautiful pakistani co-ord set.jpg" data-category="traditional" data-description="Beautiful pakistani co-ord set for a vibrant look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Beautiful pakistani co-ord set.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Beautiful Pakistani Co-ord Set</h4>
+        <p class="price">₹1499</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 31 -->
+<div class="product-card" data-id="31" data-name="Classy Jeans" data-price="₹1399" data-rating="4" data-image="../images/Product_images/classy jeans.png" data-category="casual" data-description="Stylish classy jeans for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/classy jeans.png" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Classy Jeans</h4>
+        <p class="price">₹1399</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 32 -->
+<div class="product-card" data-id="32" data-name="Essential Summer Slim-Fit T-Shirt" data-price="₹699" data-rating="4" data-image="../images/Product_images/Essential Summer Slim-Fit Collar T-Shirt.jpg" data-category="tops" data-description="Comfortable essential summer t-shirt for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Essential Summer Slim-Fit Collar T-Shirt.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Essential Summer Slim-Fit T-Shirt</h4>
+        <p class="price">₹699</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 33 -->
+<div class="product-card" data-id="33" data-name="Stylish Top" data-price="₹1599" data-rating="4.5" data-image="../images/Product_images/5.jpg" data-category="tops" data-description="Stylish top for a vibrant look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/5.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Stylish Top</h4>
+        <p class="price">₹1599</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 34 -->
+<div class="product-card" data-id="34" data-name="Elegant Neutral Outfit" data-price="₹1699" data-rating="4" data-image="../images/Product_images/Elegant Neutral Outfitt.jpg" data-category="dresses" data-description="Elegant neutral outfit for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Elegant Neutral Outfitt.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Elegant Neutral Outfit</h4>
+        <p class="price">₹1699</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 35 -->
+<div class="product-card" data-id="35" data-name="Short Shirt for Women" data-price="₹1299" data-rating="4" data-image="../images/Product_images/short Shirt for Women.jpg" data-category="tops" data-description="Comfortable short shirt for women for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/short Shirt for Women.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Short Shirt for Women</h4>
+        <p class="price">₹1299</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 36 -->
+<div class="product-card" data-id="36" data-name="Women Polyester Solid Saree" data-price="₹2300" data-rating="4.5" data-image="../images/Product_images/ODETTE Women Polyester Solid Saree.jpg" data-category="traditional" data-description="Elegant ODETTE women polyester solid saree for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/ODETTE Women Polyester Solid Saree.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Women Polyester Solid Saree</h4>
+        <p class="price">₹2300</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 37 -->
+<div class="product-card" data-id="37" data-name="Jersey Shirts" data-price="₹990" data-rating="4" data-image="../images/Product_images/Jersey Shirts.jpg" data-category="casual" data-description="Comfortable jersey shirts for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Jersey Shirts.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Jersey Shirts</h4>
+        <p class="price">₹990</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 38 -->
+<div class="product-card" data-id="38" data-name="GlowEve Pullover Sweater" data-price="₹1299" data-rating="4" data-image="../images/Product_images/GlowEve New Elegant Button Decor Pullover Sweater.jpg" data-category="casual" data-description="Elegant pullover sweater for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/GlowEve New Elegant Button Decor Pullover Sweater.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>GlowEve Pullover Sweater</h4>
+        <p class="price">₹1299</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 39 -->
+<div class="product-card" data-id="39" data-name="White Suit" data-price="₹1599" data-rating="4.5" data-image="../images/Product_images/White Suit.jpg" data-category="traditional" data-description="Elegant white suit for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/White Suit.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>White Suit</h4>
+        <p class="price">₹1599</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 40 -->
+<div class="product-card" data-id="40" data-name="Traditional Outfits Set" data-price="₹1999" data-rating="4.5" data-image="../images/Product_images/traditional outfits diwali.jpg" data-category="traditional" data-description="Beautiful traditional outfits set for festive occasions.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/traditional outfits diwali.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Traditional Outfits Set</h4>
+        <p class="price">₹1999</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 41 -->
+<div class="product-card" data-id="41" data-name="Straight Fit Jeans" data-price="₹1299" data-rating="4" data-image="../images/Product_images/Straight Fit jeans.png" data-category="casual" data-description="Comfortable straight fit jeans for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Straight Fit jeans.png" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Straight Fit Jeans</h4>
+        <p class="price">₹1299</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 42 -->
+<div class="product-card" data-id="42" data-name="Lavender Suit" data-price="₹1499" data-rating="4.5" data-image="../images/Product_images/lavender suit.jpg" data-category="traditional" data-description="Elegant lavender suit for a sophisticated look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/lavender suit.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Lavender Suit</h4>
+        <p class="price">₹1499</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 43 -->
+<div class="product-card" data-id="43" data-name="Long Sleeve Chunky Knit Sweater" data-price="₹1199" data-rating="4" data-image="../images/Product_images/Long Sleeve Chunky Knit Sweater.jpg" data-category="casual" data-description="Comfortable long sleeve chunky knit sweater for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Long Sleeve Chunky Knit Sweater.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Long Sleeve Chunky Knit Sweater</h4>
+        <p class="price">₹1199</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 44 -->
+<div class="product-card" data-id="44" data-name="Korean Drama Jacket" data-price="₹1679" data-rating="4.5" data-image="../images/Product_images/Korean drama jacket.jpg" data-category="casual" data-description="Stylish korean drama jacket for a trendy look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Korean drama jacket.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Korean Drama Jacket</h4>
+        <p class="price">₹1679</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 45 -->
+<div class="product-card" data-id="45" data-name="Pink Shirt" data-price="₹999" data-rating="4" data-image="../images/Product_images/Pink shirt.jpg" data-category="casual" data-description="Comfortable pink shirt for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Pink shirt.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Pink Shirt</h4>
+        <p class="price">₹999</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 46 -->
+<div class="product-card" data-id="46" data-name="Trendy Brand Bow Hooded" data-price="₹1499" data-rating="4" data-image="../images/Product_images/Trendy Brand Bow Hooded.jpg" data-category="casual" data-description="Stylish trendy brand bow hooded for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Trendy Brand Bow Hooded.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Trendy Brand Bow Hooded</h4>
+        <p class="price">₹1499</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 47 -->
+<div class="product-card" data-id="47" data-name="Women White Brown T-Shirt" data-price="₹1700" data-rating="4" data-image="../images/Product_images/women white brown tshirt.jpg" data-category="tops" data-description="Comfortable women white brown tshirt for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/women white brown tshirt.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Women White Brown T-Shirt</h4>
+        <p class="price">₹1700</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 48 -->
+<div class="product-card" data-id="48" data-name="Flora Print Co-ord Set" data-price="₹2400" data-rating="4.5" data-image="../images/Product_images/letast Flora print co-ord set.jpg" data-category="dresses" data-description="Stylish flora print co-ord set for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/letast Flora print co-ord set.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Flora Print Co-ord Set</h4>
+        <p class="price">₹2400</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 49 -->
+<div class="product-card" data-id="49" data-name="Short-Sleeve Polo Shirt" data-price="₹799" data-rating="4" data-image="../images/Product_images/Short-Sleeve Polo Shirt.jpg" data-category="casual" data-description="Comfortable short-sleeve polo shirt for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Short-Sleeve Polo Shirt.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Short-Sleeve Polo Shirt</h4>
+        <p class="price">₹799</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 50 -->
+<div class="product-card" data-id="50" data-name="Lambskin Leather Jacket" data-price="₹1899" data-rating="4.5" data-image="../images/Product_images/Lambskin Leather Jacket For Women's.jpg" data-category="casual" data-description="Stylish lambskin leather jacket for women.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Lambskin Leather Jacket For Women's.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Lambskin Leather Jacket</h4>
+        <p class="price">₹1899</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 51 -->
+<div class="product-card" data-id="51" data-name="Traditional Saree" data-price="₹1599" data-rating="4.5" data-image="../images/Product_images/Traditional Saree.jpg" data-category="traditional" data-description="Elegant traditional saree for special occasions.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Traditional Saree.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Traditional Saree</h4>
+        <p class="price">₹1599</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 52 -->
+<div class="product-card" data-id="52" data-name="Short Top" data-price="₹999" data-rating="4" data-image="../images/Product_images/12.jpg" data-category="tops" data-description="Comfortable short top for everyday wear.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/12.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Short Top</h4>
+        <p class="price">₹999</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 53 -->
+<div class="product-card" data-id="53" data-name="High Waist Wide Leg Baggy Jeans" data-price="₹1299" data-rating="4" data-image="../images/Product_images/High Waist Wide Leg Baggy Jeans.jpg" data-category="casual" data-description="Stylish high waist wide leg baggy jeans for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/High Waist Wide Leg Baggy Jeans.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>High Waist Wide Leg Baggy Jeans</h4>
+        <p class="price">₹1299</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 54 -->
+<div class="product-card" data-id="54" data-name="Girls Fuzzy Trim Hooded" data-price="₹1999" data-rating="4.5" data-image="../images/Product_images/Girls Fuzzy Trim Hooded.jpg" data-category="casual" data-description="Stylish girls fuzzy trim hooded for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Girls Fuzzy Trim Hooded.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Girls Fuzzy Trim Hooded</h4>
+        <p class="price">₹1999</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 55 -->
+<div class="product-card" data-id="55" data-name="Denim Top" data-price="₹1299" data-rating="4" data-image="../images/Product_images/4.jpg" data-category="tops" data-description="Stylish denim top for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/4.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Denim Top</h4>
+        <p class="price">₹1299</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 56 -->
+<div class="product-card" data-id="56" data-name="Fashion Attire Gown" data-price="₹2499" data-rating="4.5" data-image="../images/Product_images/Fashion Attire Gown.jpg" data-category="dresses" data-description="Elegant fashion attire gown for special occasions.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Fashion Attire Gown.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Fashion Attire Gown</h4>
+        <p class="price">₹2499</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 57 -->
+<div class="product-card" data-id="57" data-name="Lavender Floral Wrap Top" data-price="₹1299" data-rating="4" data-image="../images/Product_images/Lavender Floral Wrap Top.jpg" data-category="tops" data-description="Stylish lavender floral wrap top for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Lavender Floral Wrap Top.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Lavender Floral Wrap Top</h4>
+        <p class="price">₹1299</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 58 -->
+<div class="product-card" data-id="58" data-name="Mint Green Saree Look" data-price="₹1899" data-rating="4.5" data-image="../images/Product_images/14.jpg" data-category="traditional" data-description="Stylish mint green saree look for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/14.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Mint Green Saree Look</h4>
+        <p class="price">₹1899</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 59 -->
+<div class="product-card" data-id="59" data-name="Co-ord Set for Summer" data-price="₹1546" data-rating="4" data-image="../images/Product_images/Co-ord set for summer.jpg" data-category="dresses" data-description="Stylish co-ord set for summer for a fashionable look.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Co-ord set for summer.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Co-ord Set for Summer</h4>
+        <p class="price">₹1546</p>
+        <div class="rating">★★★★☆ <span>(4)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CARD 60 -->
+<div class="product-card" data-id="60" data-name="Purple Tulle Beaded Prom Dress" data-price="₹2399" data-rating="4.5" data-image="../images/Product_images/Purple Tulle Beaded Long Prom Dress.jpg" data-category="dresses" data-description="Elegant purple tulle beaded long prom dress for special occasions.">
+    <div class="product-image" onclick="openProduct(this.parentElement)">
+        <img src="../images/Product_images/Purple Tulle Beaded Long Prom Dress.jpg" alt="">
+        <span class="wishlist" onclick="addToWishlist(this,event)">❤</span>
+    </div>
+    <div class="product-info">
+        <h4>Purple Tulle Beaded Prom Dress</h4>
+        <p class="price">₹2399</p>
+        <div class="rating">★★★★☆ <span>(4.5)</span></div>
+        <button class="btn add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+</div>
+
+</div>
+
+
+
+
+</section>
+
+<!-- FEATURES SECTION -->
+
+<section class="features-section">
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            local_shipping
+        </span>
+
+        <div>
+            <h3>Free Shipping</h3>
+            <p>Free shipping on all orders above ₹999</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            replay
+        </span>
+
+        <div>
+            <h3>Easy Returns</h3>
+            <p>7 days easy return and exchange policy</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            lock
+        </span>
+
+        <div>
+            <h3>Secure Payment</h3>
+            <p>100% secure payment gateway</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            support_agent
+        </span>
+
+        <div>
+            <h3>24/7 Support</h3>
+            <p>Customer support available anytime</p>
+        </div>
+
+    </div>
+
+</section>
+
+        
+    
+    <!-- Upload Modal -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="upload-box  new-layout">
+            <!-- CLOSE BUTTON -->
+            <span class="close-upload" id="closeUpload">&times;</span>
+            <div class="upload-left">
+    
+                <h2>Upload Your Image</h2>
+                <p>Drag & drop or choose a file to get AI style recommendation</p>
+
+                <!-- Upload area -->
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" hidden>
+
+
+                    <!-- Placeholder -->
+                    <div class="upload-placeholder" id="placeholder">
+                        <div class="upload-icon">📤</div>
+                        <p>Drag & Drop your image Here</p>
+                        <span>or</span>
+                        <button class="btn" id="chooseFile">Choose File</button>
+                    </div>
+                
+                    <!-- Preview -->
+                    <div class="preview" id="previewBox">
+                        <img id="previewImage" src="" alt="preview">
+                        <button class="remove-btn" id="removeImage">Remove</button>
+                    </div>
+                </div>
+                
+                <button class="btn upload-btn analyze-btn" >Analyze Style</button>
+                <p class="note">JPG, PNG, WEBP (Max 10MB)</p>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="upload-right">
+
+                <h3>Tips for best results</h3>
+                <div class="tips">
+
+                    <p><i class="ri-sun-line"></i> Use natural lighting</p>
+
+                    <p><i class="ri-user-smile-line"></i> Keep face clearly visible</p>
+
+                    <p><i class="ri-filter-off-line"></i> Avoid heavy filters</p>
+
+                    <p><i class="ri-camera-line"></i> Use a clear front camera</p>
+
+                    <p><i class="ri-focus-3-line"></i> Keep face centered</p>
+
+                </div>
+
+                <h3>Good Examples</h3>
+                <div class="example-images good">
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/80?img=1">
+                        <i class="ri-check-line"></i>
+                    </div>
+
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/80?img=2">
+                        <i class="ri-check-line"></i>
+                    </div>
+                </div>
+
+                <h3>Avoid</h3>
+                <div class="example-images bad">
+                    <div class="img-box">
+                            <img src="https://i.pravatar.cc/80?img=4">
+                            <i class="ri-close-line"></i>
+                    </div>
+
+                    <div class="img-box">
+                            <img src="https://i.pravatar.cc/80?img=5">
+                            <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div class="result-modal" id="resultModal">
+        <div class="result-box" style="
+            background:white;
+            border-radius:24px;
+            padding:1.5rem;
+            max-width:520px;
+            width:90%;
+            margin:auto;
+            position:relative;
+            ">
+            <!-- HEADER -->
+            <div style="text-align:center;margin-bottom:1.2rem">
+                <h2 style="
+                    font-size:22px;
+                    font-weight:700;
+                    background:linear-gradient(135deg,#ff4f8b,#ff7aa2);
+                    background-clip:text;
+                    -webkit-background-clip:text;
+                    color:transparent;
+                    -webkit-text-fill-color:transparent;
+                    margin:0 0 4px;
+                    ">
+                    ✨ AI Style Analysis
+                </h2>
+                <p style="font-size:13px;color:#888;margin:0">Your personalized fashion recommendation</p>
+            </div>
+    
+            <!-- CONTENT -->
+            <div style="display:flex;gap:1.2rem;align-items:flex-start">
+    
+                <!-- IMAGE -->
+                <img id="resultImage" style="
+                    width:120px;
+                    height:150px;
+                    object-fit:cover;
+                    object-position:top;
+                    border-radius:16px;
+                    flex-shrink:0;
+                    border:3px solid #ff4f8b;
+                ">
+    
+                <!-- INFO -->
+                <div style="flex:1;min-width:0">
+    
+                    <!-- STAT CARDS -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:12px">
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">SKIN</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="skinTone">—</div>
+                        </div>
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">FACE</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="faceShape">—</div>
+                        </div>
+                        <div style="background:#fff0f5;border-radius:10px;padding:7px 5px;text-align:center">
+                            <div style="font-size:10px;color:#ff4f8b;font-weight:600;margin-bottom:2px">BODY</div>
+                            <div style="font-size:12px;font-weight:700;color:#333" id="bodyType">—</div>
+                        </div>
+                    </div>
+    
+                    <!-- STYLES -->
+                    <div style="font-size:10px;font-weight:700;color:#ff4f8b;margin-bottom:5px;letter-spacing:0.5px">RECOMMENDED STYLES</div>
+                    <div id="styleTags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px"></div>
+    
+                    <!-- COLORS -->
+                    <div style="font-size:10px;font-weight:700;color:#ff4f8b;margin-bottom:5px;letter-spacing:0.5px">YOUR COLORS</div>
+                    <div id="colorDots" style="display:flex;gap:5px;align-items:center;margin-bottom:10px;flex-wrap:wrap"></div>
+    
+                    <!-- TIP -->
+                    <div id="styleTip" style="
+                        background:#fff0f5;
+                        border-left:3px solid #ff4f8b;
+                        border-radius:0 10px 10px 0;
+                        padding:8px 10px;
+                        font-size:12px;
+                        color:#555;
+                        line-height:1.5;
+                        margin-bottom:10px;
+                    "></div>
+    
+                    <!-- SHOP BUTTON -->
+                    <div id="shopBtnContainer"></div>
+    
+                    <ul id="stylelist" style="display:none"></ul>
+    
+                </div>
+            </div>
+    
+            <!-- CLOSE -->
+            <button id="closeResult" style="
+                width:100%;
+                margin-top:1rem;
+                padding:12px;
+                background:#fff0f5;
+                border:2px solid #ff4f8b;
+                border-radius:14px;
+                font-size:14px;
+                font-weight:700;
+                cursor:pointer;
+                color:#ff4f8b;
+            ">Close</button>
+    
+        </div>
+    </div>
+   
+
+<!-- SEARCH OVERLAY -->
+
+    <div class="search-overlay">
+
+        <div class="search-box">
+
+        <!-- TOP -->
+
+            <div class="search-top">
+
+                <div class="search-input-box">
+
+                    <span class="material-icons">search</span>
+
+                    <input type="text" id="searchInput"
+                    placeholder="Search trendy dresses...">
+
+                </div>
+
+                <span class="material-icons close-search">
+                close
+                </span>
+
+            </div>
+
+            <div class="ai-line">
+            ✨ AI suggestions based on teenager fashion trends
+            </div>
+
+        <!--search body -->
+        <div class="search-body">
+
+        <!-- left -->
+            
+
+            
+            <!-- right -->
+
+            <div class="search-right">
+
+                <h3>Popular Categories</h3>
+
+                <div class="category-grid">
+                    
+                <div class="fashion-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop" alt="">
+
+
+                    <div class="fashion-overlay">
+                        👗 Dresses
+                    </div>
+                    
+                    
+                </div>
+
+                    <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=600&auto=format&fit=crop" alt="">
+
+                        <div class="fashion-overlay">
+                        👕 Tops
+                        </div>
+                    </div>
+
+                        
+                   <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1773439878533-77383b20577c?w=300&auto=format&fit=crop" alt="">
+
+
+                        <div class="fashion-overlay">
+                        👚 Traditional
+                        </div>
+                    </div>
+
+                    <div class="fashion-card">
+                        <img src="https://images.unsplash.com/photo-1716004360220-213371f51df1?w=300&auto=format&fit=crop" alt=""> 
+
+
+                        <div class="fashion-overlay">
+                            👟casual
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/products.js"></script>
+
+    
+</body>
+</html>

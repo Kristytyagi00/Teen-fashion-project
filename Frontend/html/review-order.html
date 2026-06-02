@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Order</title>
+
+<link rel="stylesheet" href="../css/review-order.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+    <span class="material-icons back">
+        arrow_back
+    </span>
+
+    <div>
+        <h2>REVIEW YOUR ORDER</h2>
+        <p>STEP 1/2</p>
+    </div>
+
+</div>
+
+
+<!-- OFFER -->
+
+<div class="offer-box" id="offerBox">
+    
+</div>
+
+
+
+
+<!-- PRODUCT LIST -->
+
+<div id="reviewProductsContainer"></div>
+
+
+<!-- SELLER -->
+
+<div class="seller-box">
+    Sold by: LATEST MODEL
+</div>
+
+
+<!-- DELIVERY -->
+
+<div class="delivery-box">
+
+    <div class="delivery-top">
+        <span class="material-icons truck">
+            local_shipping
+        </span>
+
+        <h3>
+            <span id="deliveryDate"></span>
+        </h3>
+
+    </div>
+
+
+    <!-- SAVED ADDRESS -->
+
+    <div class="saved-address-box">
+
+        <div>
+
+            <h4 id="savedUserName">
+                No Address Added
+            </h4>
+
+            <p id="savedUserAddress">
+                Please add address
+            </p>
+
+        </div>
+
+        <button id="changeAddressBtn">
+            Change
+        </button>
+
+    </div>
+
+
+    <!-- ADDRESS FORM -->
+
+    <div class="address-form">
+
+        <input type="text"
+        id="userName"
+        placeholder="Enter Full Name">
+
+        <input type="text"
+        id="userPhone"
+        placeholder="Enter Mobile Number">
+
+        <input type="text"
+        id="userPincode"
+        placeholder="Enter Pincode">
+
+        <textarea
+        id="userAddress"
+        placeholder="Enter Full Address"></textarea>
+
+        <button id="saveAddressBtn">
+            Save Address
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- PRICE -->
+
+<div class="price-details">
+    <h3>Price Details</h3>
+    <span id="bottomPrice"></span>
+</div>
+
+
+<!-- BOTTOM -->
+
+<div class="bottom-bar">
+
+    <div>
+        <span>VIEW PRICE DETAILS :-</span>
+        <p id="bottomOffer"></p>
+        <h2 id="finalPrice"></h2>
+        
+        
+    </div>
+
+    <button class="continue-btn">
+        Continue
+    </button>
+
+</div>
+
+<script src="../javascript/review-order.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TeenFashion Login</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="auth.body">
+
+<section class="login-page">
+
+    <!-- LEFT SIDE -->
+    <div class="left-panel">
+
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+
+        <div class="auth-content">
+
+            <div class="auth-logo">
+                <img src="https://img.freepik.com/premium-vector/girls-fashion-pink-color-logo-design_658271-5404.jpg?semt=ais_hybrid&w=740&q=80">
+                <h2>Teen<span>Fashion</span></h2>
+            </div>
+
+            <h1>
+                Smart Fashion
+                <br>
+                Powered by AI
+            </h1>
+
+            <p>
+                Upload your image and get trendy outfit recommendations
+                based on your face shape, skin tone and fashion style.
+            </p>
+
+            <div class="features">
+
+                <div class="feature-card">
+                    <span class="material-icons">auto_awesome</span>
+                    <h3>AI Styling</h3>
+                </div>
+
+                <div class="feature-card">
+                        <span class="material-icons">bolt</span>
+                        <h3>Instant Results</h3>
+                </div>
+
+                <div class="feature-card">
+                    <span class="material-icons">checkroom</span>
+                    <h3>Teen Trends</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="right-panel">
+
+        <div class="login-box">
+
+            <div class="top-text">
+                <h2>Hello Again 👋</h2>
+                <p>Login to continue your fashion journey</p>
+            </div>
+
+            <!-- TOGGLE -->
+            <div class="tabs">
+                <button class="tab active" id="loginTab">Login</button>
+                <button class="tab" id="signupTab">Signup</button>
+            </div>
+
+
+            
+
+            <!-- LOGIN FORM -->
+            <form class="form-section login-form active-form" id="loginForm">
+
+                <div class="input-box">
+                    <span class="material-icons">mail</span>
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="material-icons">lock</span>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+
+                <div class="form-extra">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+
+                <!-- FORGOT PASSWORD  -->
+                    <a href="#" class="forgot-btn" id="forgotPassword">
+                        Forgot Password?
+                    </a>
+                </div>
+
+                <button class="main-btn" type="submit">
+                Login
+                </button>
+
+            </form>   
+
+                    
+
+            <!-- SIGNUP FORM -->
+            <form class="form-section signup-Form" id="signupForm">
+
+                <div class="input-box">
+                    <span class="material-icons">person</span>
+                    <input type="text" id="signupName" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="material-icons">mail</span>
+                    <input type="email" id="signupEmail" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="material-icons">lock</span>
+                    <input type="password" id="signupPassword" placeholder="Create Password" required>
+                </div>
+
+                <button class="main-btn" type="submit">Create Account</button>
+
+            </form>
+
+            <!-- SOCIAL LOGIN -->
+            <div class="social-login">
+
+                <p>Or continue with</p>
+
+                <div class="social-icons">
+
+                    <button class="social-btn google-btn" id="googleLogin">
+                    <i class="ri-google-fill"></i>
+                    </button>
+
+                    <button class="social-btn facebook-btn" id="facebookLogin">
+                    <i class="ri-facebook-fill"></i>
+                    </button>
+                
+                    <button class="social-btn apple-btn" id="appleLogin">
+                    <i class="ri-apple-fill"></i>
+                    </button>
+
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+</section>
+
+<script src="../javascript/auth.js"></script>
+
+</body>
+</html>
+

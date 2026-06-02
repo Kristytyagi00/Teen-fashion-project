@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+
+    <link rel="stylesheet" href="../css/product-detail.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<section class="product-detail-page">
+
+    <!-- LEFT -->
+    
+
+    <div class="product-gallery">
+        <div class="detail-wishlist">
+            ❤
+        </div>
+
+        <div class="main-image">
+            <img id="mainProductImage">
+        </div>
+
+        
+
+    </div>
+
+
+    <!-- RIGHT -->
+
+    <div class="product-info-detail">
+        <h1 id="productName"></h1>
+        <div class="rating">
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <span id="productRating"></span>
+
+        </div>
+
+        <div class="price-box">
+
+            <div class="main-price"
+            id="productPrice"></div>
+
+            <div class="old-price">
+            </div>
+
+            <div class="discount" id="discount-tag"></div>
+
+        </div>
+
+        <p id="productDescription"></p>
+
+
+        <!-- SIZE -->
+
+        <div class="detail-box">
+
+            <h3>Size:</h3>
+
+            <div class="sizes">
+
+                <button>XS</button>
+                <button class="active">S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+                <button>XXL</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUANTITY -->
+
+        <div class="quantity">
+
+            <h3>Quantity:</h3>
+
+            <div class="qty-box">
+                <button id="minus">-</button>
+                <span id="qty">1</span>
+                <button id="plus">+</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="detail-buttons">
+            <button class="cart-btn " id="addToCartBtn">
+                Add To Cart
+            </button>
+
+
+            <button class="buy-btn" id="buyNowBtn">
+                Buy Now
+            </button>
+
+        
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="features-section">
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            local_shipping
+        </span>
+
+        <div>
+            <h3>Free Shipping</h3>
+            <p>Free shipping on all orders above ₹999</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            replay
+        </span>
+
+        <div>
+            <h3>Easy Returns</h3>
+            <p>7 days easy return and exchange policy</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            lock
+        </span>
+
+        <div>
+            <h3>Secure Payment</h3>
+            <p>100% secure payment gateway</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="feature-box">
+
+        <span class="material-icons feature-icon">
+            support_agent
+        </span>
+
+        <div>
+            <h3>24/7 Support</h3>
+            <p>Customer support available anytime</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="../javascript/product-detail.js"></script>
+
+</body>
+</html>

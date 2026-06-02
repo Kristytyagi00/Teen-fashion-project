@@ -1,0 +1,61 @@
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.*
+*.env
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ========================
+# Virtual Environment
+# ========================
+venv/
+env/
+.venv/
+.ENV/
+
+# ========================
+# IDE & Editors
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# Database
+# ========================
+*.sqlite3
+*.db
+
+# ========================
+# Uploads / User Data
+# ========================
+uploads/
+*.tmp
