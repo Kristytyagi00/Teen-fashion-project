@@ -29,4 +29,4 @@ flask-limiter==3.5.0
 # MediaPipe — Google's pretrained ML pipeline for face and pose detection.
 # Provides FaceMesh (468 face landmarks) and Pose (33 body keypoints).
 # CPU-only, no GPU required, works on Windows / macOS / Linux.
-mediapipe==0.10.14
+mediapipe==0.10.35
