@@ -177,5 +177,8 @@ This project was created as a final academic project.
 
 ---
 
+## 👩‍💻 Author
+Kristy Tyagi
+
 
 
