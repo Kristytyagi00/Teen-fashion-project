@@ -177,9 +177,5 @@ This project was created as a final academic project.
 
 ---
 
-## 👩‍💻 Author
-
-**Rudrakshi171** — [GitHub](https://github.com/Rudrakshi171)
-=======
 
 
